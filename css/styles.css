@@ -1,0 +1,18 @@
+/* 
+універсальний - *
+тега - a
+айді - #
+class = rulez!
+атрибут = [type} - [type]="button{}
+дочірній = .header > a (перша вкладеність)
+нащадка = .header a (нащадка - тобто для всіх а в межах хедеру)
+*/
+/* a {
+  text-decoration: none;
+} */
+.header a {
+  color: red;
+}
+.list {
+  list-style: none;
+}

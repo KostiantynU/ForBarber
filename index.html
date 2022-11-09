@@ -1,54 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="vievport" content="width=device-width, initial-scale=1.0">
-    <titile>BarberShop</titile>
-</head>
-    <body>
-        <header>
-            <a href="./index.html"><img src=".images/logo.png" alt="logo"></a>
-            <nav>
-            <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">Services and prices</a></li>
-                <li><a href="">Barbers</a></li>
-                <li><a href="">Contacts</a></li>
-            </ul>
-            </nav>
-            <a href="tel:+380441111111">+38 044 111 11 11</a>
-            <button type="button">Online-Booking</button>
-        </header>
-        <main>
-            <section>
-                <p>A hair salon for men in Kyiv</p>
-                <h1>BarberShop</h1>
-                <p>We are experts in trendy men’s haircuts.
-                We work quickly, carefully and with style.</p>
-                <ul>
-                    <li><a href="" rel="noopener noreferrer nofollow"></a></li>
-                    <li><a href="" rel="noopener noreferrer nofollow"></a></li>
-                </ul>
-            </section>
-            <section>
-                <ul>
-                    <li><img src="./images/img_1.webp" alt=""></li>
-                    <li><img src="./images/img_1.webp" alt=""></li>
-                </ul>
-                <p>About</p>
-                <h2>Best Barbershop in your city</h2>
-                <p>If you want to add more confidence to your image, you should definitely visit us.</p>
-                <p>We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands
-                of our master, you will never be the same again. We are a team that is always "on the same wave" with clients.
-                Therefore, we are always ready to improve everyone who comes to us!</p>
-
-            </section>
-
-        </main>
-        <footer>
-
-        </footer>
-
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>BarberShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a class="header-logo" href="./index.html"><img src="./images/logo.png" alt="logo" /></a>
+      <nav class="header-nav">
+        <ul class="hedaer-list list">
+          <li><a href="" class="header-link link">About</a></li>
+          <li><a href="" class="header-link link">Services and prices</a></li>
+          <li><a href="" class="header-link link">Barbers</a></li>
+          <li><a href="" class="header-link link">Contacts</a></li>
+        </ul>
+      </nav>
+      <a href="tel:+380441111111" class="header-tel link">+38 044 111 11 11</a>
+      <button type="button" class="header-btn">Online-Booking</button>
+    </header>
+    <main>
+      <!--Section Hero-->
+      <section class="hero">
+        <p class="sub-title">A hair salon for men in Kyiv</p>
+        <h1 class="title">BarberShop</h1>
+        <p class="hero-text">
+          We are experts in trendy men’s haircuts. We work quickly, carefully and with style.
+        </p>
+        <ul class="hero-list list">
+          <li><a href="" class="hero-links link" rel="noopener noreferrer nofollow"></a></li>
+          <li><a href="" class="hero-links link" rel="noopener noreferrer nofollow"></a></li>
+        </ul>
+      </section>
+      <!--About-->
+      <section>
+        <ul class="about-list list">
+          <li><img src="./images/img-1.jpg" alt="" /></li>
+          <li><img src="./images/img-2.jpg" alt="" /></li>
+        </ul>
+        <p class="about-sub-title">About</p>
+        <h2 class="about-h">Best Barbershop in your city</h2>
+        <p class="about-p-one">
+          If you want to add more confidence to your image, you should definitely visit us.
+        </p>
+        <p class="about-p-two">
+          We are a team that never stops at what has been achieved and are thirsty for changes. And
+          when you fall into the hands of our master, you will never be the same again. We are a
+          team that is always "on the same wave" with clients. Therefore, we are always ready to
+          improve everyone who comes to us!
+        </p>
+        <button type="button" class="about-btn">ONLINE-BOOKING</button>
+      </section>
+      <!--Service and pricing-->
+      <section>
+        <p class="service-sub-title">Spend your time with the best masters</p>
+        <h2 class="service-header">Services</h2>
+        <ul class="card-one">
+          <li class="card-one-item list">Men’s haircut from 300 UAH</li>
+          <li class="card-one-item list">Beard trim from 300 UAH</li>
+          <li class="card-one-item list">Mustache trim from 300 UAH</li>
+          <li class="card-one-item list">Straight razor shave from 300 UAH</li>
+        </ul>
+        <ul class="card-two">
+          <li class="card-two-item list">Trainee’s haircut from 50 UAH</li>
+          <li class="card-two-item list">Haircut under the nozzle from 200 UAH</li>
+          <li class="card-two-item list">Children’s haircut (0-12 y.o.) from 300 UAH</li>
+          <li class="card-two-item list">Camouflage of gray hair from 200 UAH</li>
+        </ul>
+        <button type="button">ONLINE BOOKING</button>
+      </section>
+      <!--Why-->
+      <section>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <p></p>
+        <h2></h2>
+        <p></p>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
