@@ -4,6 +4,10 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>BarberShop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,79 +19,128 @@
   </head>
   <body>
     <header class="header">
-      <a class="header-logo" href="./index.html"><img src="./images/logo.png" alt="logo" /></a>
-      <nav class="header-nav">
-        <ul class="hedaer-list list">
-          <li><a href="" class="header-link link">About</a></li>
-          <li><a href="" class="header-link link">Services and prices</a></li>
-          <li><a href="" class="header-link link">Barbers</a></li>
-          <li><a href="" class="header-link link">Contacts</a></li>
-        </ul>
-      </nav>
-      <a href="tel:+380441111111" class="header-tel link">+38 044 111 11 11</a>
-      <button type="button" class="header-btn">Online-Booking</button>
+      <div class="container">
+        <a class="header-logo" href="./index.html"><img src="./images/logo.png" alt="logo" /></a>
+        <nav class="header-nav">
+          <ul class="header-list list">
+            <li><a href="" class="header-link link">About</a></li>
+            <li><a href="" class="header-link link">Services and prices</a></li>
+            <li><a href="" class="header-link link">Barbers</a></li>
+            <li><a href="" class="header-link link">Contacts</a></li>
+          </ul>
+        </nav>
+        <a href="tel:+380441111111" class="header-tel link">+38 044 111 11 11</a>
+        <button type="button" class="header-btn btn">Online-Booking</button>
+      </div>
     </header>
+
     <main>
       <!--Section Hero-->
       <section class="hero">
-        <p class="sub-title">A hair salon for men in Kyiv</p>
-        <h1 class="title">BarberShop</h1>
-        <p class="hero-text">
-          We are experts in trendy men’s haircuts. We work quickly, carefully and with style.
-        </p>
-        <ul class="hero-list list">
-          <li><a href="" class="hero-links link" rel="noopener noreferrer nofollow"></a></li>
-          <li><a href="" class="hero-links link" rel="noopener noreferrer nofollow"></a></li>
-        </ul>
+        <div class="container">
+          <p class="sub-title pre-title">A hair salon for men in Kyiv</p>
+          <h1 class="hero-title title">BarberShop</h1>
+          <p class="hero-text">
+            We are experts in trendy men’s haircuts. We work quickly, carefully and with style.
+          </p>
+          <ul class="hero-list list">
+            <li>
+              <a href="" class="hero-links link" rel="noopener noreferrer nofollow">Instagram</a>
+            </li>
+            <li>
+              <a href="" class="hero-links link" rel="noopener noreferrer nofollow">YouTube</a>
+            </li>
+          </ul>
+          <div class="hero-right"></div>
+        </div>
       </section>
       <!--About-->
-      <section>
-        <ul class="about-list list">
-          <li><img src="./images/img-1.jpg" alt="" /></li>
-          <li><img src="./images/img-2.jpg" alt="" /></li>
+      <section class="about">
+        <ul class="list-about list">
+          <li class="about-items link"><img src="./images/img-1.jpg" alt="" /></li>
+          <li class="about-items link"><img src="./images/img-2.jpg" alt="" /></li>
         </ul>
-        <p class="about-sub-title">About</p>
-        <h2 class="about-h">Best Barbershop in your city</h2>
-        <p class="about-p-one">
+        <p class="about-pre-title pre-title">About</p>
+        <h2 class="about-title title">Best Barbershop in your city</h2>
+        <p class="about-after-title aftr-title">
           If you want to add more confidence to your image, you should definitely visit us.
         </p>
-        <p class="about-p-two">
+        <p class="about-text">
           We are a team that never stops at what has been achieved and are thirsty for changes. And
           when you fall into the hands of our master, you will never be the same again. We are a
           team that is always "on the same wave" with clients. Therefore, we are always ready to
           improve everyone who comes to us!
         </p>
-        <button type="button" class="about-btn">ONLINE-BOOKING</button>
+        <button type="button" class="about-btn btn">online-booking</button>
       </section>
       <!--Service and pricing-->
-      <section>
-        <p class="service-sub-title">Spend your time with the best masters</p>
-        <h2 class="service-header">Services</h2>
-        <ul class="card-one">
-          <li class="card-one-item list">Men’s haircut from 300 UAH</li>
-          <li class="card-one-item list">Beard trim from 300 UAH</li>
-          <li class="card-one-item list">Mustache trim from 300 UAH</li>
-          <li class="card-one-item list">Straight razor shave from 300 UAH</li>
+      <section class="prices">
+        <p class="prices-pre-title pre-title">Spend your time with the best masters</p>
+        <h2 class="prices-title title">Services and prices</h2>
+        <ul class="prices-list list">
+          <li class="prices-item">
+            <p class="prices-elem">Men’s haircut</p>
+            <p class="prices-elem">from 300 UAH</p>
+          </li>
+          <li class="prices-item">
+            <p class="prices-elem">Beard trim</p>
+            <p class="prices-elem">from 300 UAH</p>
+          </li>
+          <li class="prices-item">
+            <p class="prices-elem">Mustache trim</p>
+            <p class="prices-elem">from 300 UAH</p>
+          </li>
+          <li class="prices-item">
+            <p class="prices-elem">Straight razor shave</p>
+            <p class="prices-elem">from 300 UAH</p>
+          </li>
         </ul>
-        <ul class="card-two">
-          <li class="card-two-item list">Trainee’s haircut from 50 UAH</li>
-          <li class="card-two-item list">Haircut under the nozzle from 200 UAH</li>
-          <li class="card-two-item list">Children’s haircut (0-12 y.o.) from 300 UAH</li>
-          <li class="card-two-item list">Camouflage of gray hair from 200 UAH</li>
+        <ul class="prices-list list">
+          <li class="prices-item">
+            <p class="prices-elem">Trainee’s haircut</p>
+            <p class="prices-elem">from 50 UAH<</p>
+          </li>
+          <li class="prices-item">
+            <p class="prices-elem">Haircut under the nozzle</p>
+            <p class="prices-elem">from 200 UAH</p>
+          </li>
+          <li class="prices-item">
+            <p class="prices-elem">Children’s haircut (0-12 y.o.)</p>
+            <p class="prices-elem">from 300 UAH</p>
+          </li>
+          <li class="prices-item">
+            <p class="prices-elem">Camouflage of gray hair</p>
+            <p class="prices-elem">from 200 UAH</p>
+          </li>
         </ul>
-        <button type="button">ONLINE BOOKING</button>
+        <button type="button" class="prices-btn btn">ONLINE BOOKING</button>
       </section>
-      <!--Why-->
-      <section>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+      <!--Why with us-->
+      <section class="benefits">
+        <ul class="benefits-list list">
+          <li class="benefits-items">
+            <span>600</span><sup>+</sup>
+            <p>Satisfied clients per day</p>
+          </li>
+          <li class="benefits-items">
+            <span>50</span><sup>+</sup>
+            <p>Awards for excellent service</p>
+          </li>
+          <li class="benefits-items">
+            <span>20</span><sup>+</sup>
+            <p>Kyiv's best barbers</p>
+          </li>
+          <li class="benefits-items">
+            <span>100</span><sup>+</sup>
+            <p>Gifts for regular clients</p>
+          </li>
         </ul>
-        <p></p>
-        <h2></h2>
-        <p></p>
+        <p class="benefits-pre-title title">Old traditional school</p>
+        <h2 class="benefits-title title after-title">¿Why people come to us?</h2>
+        <p class="benefits-after-title after-title">
+          Only good things are said about us. But it's better to see and feel 1 time than read 10
+          times.
+        </p>
       </section>
     </main>
     <footer></footer>

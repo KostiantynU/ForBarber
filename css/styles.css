@@ -11,48 +11,203 @@ class = rulez!
   text-decoration: none;
 } */
 :root {
-  --main-color: #ccc;
+  --primary-header-color: #303030;
+  --second-header-color: #ffffff;
+  --primary-link-color: #ffffff;
+  --accent-color: #ff6c00;
+  --gray-blue: #9da4bd;
+  --transparent-color: rgba(157, 164, 189, 0.6);
+  --gray-light: #555555;
+
+  --main-margin: 20px;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+ul {
+  margin: 0px;
+  padding-left: 0px;
+}
+button {
+  cursor: pointer;
 }
 body {
   font-family: 'Open Sans', sans-serif;
-
-  .link {
-    text-decoration: none;
-  }
+  font-size: 11px;
+  background-color: #ffffff;
+  letter-spacing: 0.02em;
 }
+/* Utilite clasese */
+.link {
+  text-decoration: none;
+}
+
 .list {
   list-style: none;
 }
-/* Head styles*/
-.header {
-  background-color: gray;
+.title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 72px;
+  line-height: 1.18px;
+  letter-spacing: 0.05em;
 }
-.header-link {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-  color: #ffffff;
-}
-.header-tel {
-  font-weight: 400px;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-  color: #ffffff;
-}
-.header-btn {
+.btn {
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  color: var(--main-color);
+}
+.btn:hover,
+.btn:active {
+  background-color: var(--accent-color);
+}
+
+.container {
+  width: 1200px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+/* Head styles*/
+.header {
+  background-color: gray;
+}
+.header-logo {
+  padding: 32px 0px;
+  display: block;
+}
+.header-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--primary-link-color);
+}
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+.header-tel {
+  font-weight: 600px;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--primary-link-color);
+}
+.header-btn {
   color: #ffffff;
 }
-.header-btn:hover,
-.header-btn:active {
-  background-color: #ff6c00;
+.pre-title {
+  font-weight: 600;
+  line-height: 1.36px;
+  text-transform: uppercase;
+}
+.after-title {
+  font-size: 18px;
+  line-height: 1.67em;
+  leter-spacing: 0.02em;
 }
 /*head styles end*/
+/* index-section: Hero*/
+.hero {
+  background-color: var(--gray);
+}
+.hero-right {
+  padding: 184px 526px 208px 100px;
+}
+.sub-title {
+  margin-top: var(--main-margin);
+
+  color: var(--transparent-color);
+}
+.hero-title {
+  color: var(--second-header-color);
+}
+.hero-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--gray-blue);
+}
+.hero-links {
+  font-weight: 600;
+  line-height: 1.36;
+  text-align: right;
+  letter-spacing: 0.2em;
+  color: var(--gray-light);
+}
+.hero-links:hover,
+.hero-links:focus {
+  color: var(--orange-color);
+}
+/* index-section: about*/
+.about-pre-title {
+  color: var(--gray);
+}
+.about-title {
+  color: var(--gray);
+}
+.about-after-title {
+  color: var(--gray-light);
+}
+.about-text {
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: var(--gray-light);
+}
+.about-btn {
+  color: var(--gray);
+}
+
+/* index-section: service and prices */
+.prices-pre-title {
+  color: var(--transparent-color);
+}
+.prices-title {
+  color: var(--second-header-color);
+}
+.prices-elem {
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+  color: var(--gray-blue);
+}
+.prices-btn {
+  color: var(--main-margin);
+}
+/* index-section: benefits (why with us) */
+.benefits-items > span {
+  font-weight: 700;
+  font-size: 42px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--primary-header-color);
+}
+.benefits-items > sup {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.38em;
+  text-align: center;
+  color: var(--accent-color);
+}
+.benefits-pre-title {
+  color: var(--primary-header-color);
+}
+.benefits-title {
+  color: var(--primary-header-color);
+}
+.benefits-after-title {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--gray-light);
+}
