@@ -20,7 +20,26 @@ class = rulez!
   --gray-light: #555555;
   --main-margin: 20px;
 }
-
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+button {
+  cursor: pointer;
+}
+img {
+  display: block;
+}
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 11px;
@@ -28,6 +47,11 @@ body {
   letter-spacing: 0.02em;
 }
 /* Utilite clasese */
+.container {
+  width: 1200px;
+  padding: 0px 15px;
+  margin: 0px auto;
+}
 .link {
   text-decoration: none;
 }
@@ -70,11 +94,7 @@ button {
   white-space: nowrap;
   overflow: hidden;
 }
-.container {
-  width: 1200px;
-  padding: 0px 15px;
-  margin: 0 auto;
-}
+
 /* Head styles*/
 .header {
   background-color: gray;
@@ -122,15 +142,19 @@ button {
 .hero-right {
   padding: 184px 526px 208px 100px;
 }
-.sub-title {
-  /*margin-top: var(--main-margin);*/
-
+.hero-pre-title {
+  margin-bottom: var(--main-margin);
+  display: inline-block;
   color: var(--transparent-color);
 }
 .hero-title {
+  display: inline-block;
   color: var(--second-header-color);
+  margin-bottom: var(--main-margin);
 }
 .hero-text {
+  display: inline-block;
+  max-width: 400px;
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
@@ -148,31 +172,51 @@ button {
   color: var(--orange-color);
 }
 /* index-section: about*/
+.about {
+  padding: 120px 0;
+}
 .about-pre-title {
   color: var(--primary-header-color);
+  margin-bottom: var(--main-margin);
 }
 .about-title {
   color: var(--primary-header-color);
+  margin-bottom: var(--main-margin);
 }
 .about-after-title {
   color: var(--gray-light);
+  margin-bottom: var(--main-margin);
 }
 .about-text {
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: var(--gray-light);
+  margin-bottom: 42px;
 }
 .about-btn {
   color: var(--gray);
 }
 
 /* index-section: service and prices */
+.prices {
+  padding: 120px 0px;
+  background-color: gray;
+}
 .prices-pre-title {
   color: var(--transparent-color);
+  margin-bottom: var(--main-margin);
 }
 .prices-title {
   color: var(--second-header-color);
+  margin-bottom: 44px;
+}
+.prices-list {
+  border: 1px solid black;
+  padding: 30px 20px;
+}
+.prices-item {
+  margin-bottom: var(--main-margin);
 }
 .prices-elem {
   font-size: 18px;
@@ -182,8 +226,14 @@ button {
 }
 .prices-btn {
   color: var(--accent-color);
+  margin: 0px auto;
+  display: block;
+  margin-top: 44px;
 }
 /* index-section: benefits (why with us) */
+.benefits {
+  padding: 120px 0px;
+}
 .benefits-items > span {
   font-weight: 700;
   font-size: 42px;
