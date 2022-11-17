@@ -21,7 +21,6 @@ class = rulez!
   --main-margin: 20px;
 }
 
-
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 11px;
@@ -63,13 +62,13 @@ button {
 }
 .vissually-hidden {
   position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .container {
   width: 1200px;
@@ -124,7 +123,7 @@ button {
   padding: 184px 526px 208px 100px;
 }
 .sub-title {
-  margin-top: var(--main-margin);
+  /*margin-top: var(--main-margin);*/
 
   color: var(--transparent-color);
 }
@@ -281,6 +280,7 @@ button {
   letter-spacing: 0.02em;
   color: var(--primary-header-color);
 }
-.footer-links:hover, .footer-links:focus {
+.footer-links:hover,
+.footer-links:focus {
   color: var(--accent-color);
 }
