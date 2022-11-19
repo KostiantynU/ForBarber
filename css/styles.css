@@ -234,12 +234,20 @@ button {
 .benefits {
   padding: 120px 0px;
 }
+.benefits-items{
+  background-color: #f7f7f7;
+  width: 170px;
+  height: 133px;
+  padding: 20px 20px;
+  text-align: center;
+}
 .benefits-items > span {
   font-weight: 700;
   font-size: 42px;
   text-align: center;
   letter-spacing: 0.05em;
   color: var(--primary-header-color);
+
 }
 .benefits-items > sup {
   font-weight: 600;
@@ -247,12 +255,15 @@ button {
   line-height: 1.38;
   text-align: center;
   color: var(--accent-color);
+  display: inline-block;
 }
 .benefits-pre-title {
   color: var(--primary-header-color);
+  margin-bottom: var(--main-margin);
 }
 .benefits-title {
   color: var(--primary-header-color);
+  margin-bottom: var(--main-margin);
 }
 .benefits-after-title {
   font-size: 18px;
@@ -261,11 +272,16 @@ button {
   color: var(--gray-light);
 }
 /* index-section: barbers */
+.barbers {
+  padding: 120px 0;
+}
 .barbers-pre-title {
   color: var(--primary-header-color);
+  margin-bottom: var(--main-margin);
 }
 .barbers-title {
   color: var(--primary-header-color);
+  margin-bottom: 44px;
 }
 .barbers-name {
   font-weight: 400;
@@ -274,6 +290,8 @@ button {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--primary-header-color);
+  margin-top: 30px;
+  margin-bottom: 8px;
 }
 .barbers-info {
   font-size: 14px;
@@ -283,8 +301,12 @@ button {
   color: var(--accent-color);
 }
 /* index-section: gallery */
+.gallery {
+  padding: 120px 0;
+}
 .gallery-pre-title {
   color: var(--primary-header-color);
+  margin-bottom: 44px;
 }
 /* index-section: form */
 .form-title {
@@ -318,6 +340,9 @@ button {
   color: #9da4bd;
 }
 /* index-secrion: footer */
+.footer {
+  padding: 56px 0px;
+}
 .footer-copy {
   font-weight: 600;
   line-height: 1.36;
