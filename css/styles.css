@@ -64,8 +64,8 @@ body {
 }
 .title {
   font-family: 'Raleway', sans-serif;
-  font-size: 72px;
-  line-height: 1.18px;
+  font-size: 42px;
+  line-height: 1.18;
   letter-spacing: 0.05em;
 }
 .btn {
@@ -131,7 +131,7 @@ button {
 }
 .after-title {
   font-size: 18px;
-  line-height: 1.67em;
+  line-height: 1.67;
   letter-spacing: 0.02em;
 }
 /*head styles end*/
