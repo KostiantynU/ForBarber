@@ -126,7 +126,7 @@ button {
 }
 .pre-title {
   font-weight: 600;
-  line-height: 1.36px;
+  line-height: 1.36;
   text-transform: uppercase;
 }
 .after-title {
