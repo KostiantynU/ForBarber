@@ -146,11 +146,13 @@ button {
   margin-bottom: var(--main-margin);
   display: inline-block;
   color: var(--transparent-color);
+  margin-right: 40px;
 }
 .hero-title {
   display: inline-block;
   color: var(--second-header-color);
   margin-bottom: var(--main-margin);
+  margin-left: 20px;
 }
 .hero-text {
   display: inline-block;
@@ -234,7 +236,7 @@ button {
 .benefits {
   padding: 120px 0px;
 }
-.benefits-items{
+.benefits-items {
   background-color: #f7f7f7;
   width: 170px;
   height: 133px;
@@ -244,10 +246,9 @@ button {
 .benefits-items > span {
   font-weight: 700;
   font-size: 42px;
-  text-align: center;
+  /* text-align: center; */
   letter-spacing: 0.05em;
   color: var(--primary-header-color);
-
 }
 .benefits-items > sup {
   font-weight: 600;
