@@ -164,9 +164,9 @@ button {
 }
 /*head styles end*/
 /* index-section: Hero*/
-.hero {
+/* .hero {
   background-color: gray;
-}
+} */
 .hero .container {
   display: flex;
 }
@@ -175,6 +175,13 @@ button {
 }
 .hero-right {
   padding: 184px 526px 208px 100px;
+  flex-grow: 1;
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+    url('../images/Bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #303030;
 }
 .hero-pre-title {
   margin-bottom: var(--main-margin);
@@ -250,7 +257,13 @@ button {
 /* index-section: service and prices */
 .prices {
   padding: 120px 0px;
-  background-color: gray;
+  background-color: #111319;
+  background-image: url(../images/prices.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 .prices-pre-title {
   color: var(--transparent-color);
@@ -343,6 +356,7 @@ button {
 /* index-section: barbers */
 .barbers {
   padding: 120px 0;
+  background-color: #f7f2f7;
 }
 .barbers-pre-title {
   color: var(--primary-header-color);
@@ -378,7 +392,44 @@ button {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  margin-bottom: 30px;
 }
+.barbers-soc-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.barbers-soc-items {
+  width: 44px;
+  height: 44px;
+}
+/* .barbers-soc-link:hover .barbers-soc-icons,
+.barbers-soc-link:focus .barbers-soc-icons {
+  fill: var(--accent-color);
+} */
+.barbers-soc-items:not(:last-child) {
+  margin-right: 10px;
+}
+.barbers-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #000;
+}
+.barbers-soc-link:hover {
+  fill: var(--accent-color);
+}
+/* .barbers-soc-link:hover {
+  background-color: #000;
+  color: var(--accent-color);
+}
+.barbers-soc-icons {
+  fill: currentColor;
+} */
 /* index-section: gallery */
 .gallery {
   padding: 120px 0;
