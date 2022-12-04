@@ -99,7 +99,18 @@ button {
   white-space: nowrap;
   overflow: hidden;
 }
-
+.pre-title {
+  display: flex;
+  align-items: center;
+}
+.pre-title::before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  background-color: currentColor;
+}
 /* Head styles*/
 .header {
   background-color: gray;
@@ -185,10 +196,10 @@ button {
 }
 .hero-pre-title {
   margin-bottom: var(--main-margin);
-  display: inline-block;
   color: var(--transparent-color);
   margin-right: 40px;
 }
+
 .hero-title {
   display: inline-block;
   color: var(--second-header-color);
@@ -282,13 +293,30 @@ button {
   padding: 30px 20px;
   flex-grow: 1;
 }
-.prices-item {
+.prices-list:first-child {
+  background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.prices-list:last-child {
+  background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2));
+}
+.prices-items {
   margin-bottom: var(--main-margin);
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
-.prices-item:not(:last-child) {
+.prices-items:not(:last-child) {
   margin-bottom: 0;
+}
+.prices-items::after {
+  content: '';
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.12);
+  flex-grow: 1;
+  margin: 0 12px;
+}
+.prices-elem:last-child {
+  order: 1;
 }
 .prices-elem {
   font-size: 18px;
@@ -306,11 +334,19 @@ button {
 .benefits {
   padding: 120px 0px;
 }
+.benefits .container {
+  display: flex;
+}
+.benefits-list-wrap {
+  width: calc(50% + 15px);
+  display: flex;
+  justify-content: center;
+}
 .benefits-items {
   background-color: #f7f7f7;
   width: 170px;
   height: 133px;
-  padding: 20px 20px;
+  padding: 20px 24px;
   text-align: center;
 }
 .benefits-list {
@@ -327,18 +363,43 @@ button {
 .benefits-items > span {
   font-weight: 700;
   font-size: 42px;
-  /* text-align: center; */
+  text-align: center;
+  line-height: 1.35;
   letter-spacing: 0.05em;
   color: var(--primary-header-color);
+  display: inline-block;
 }
-.benefits-items > sup {
+.benefits-items > span {
+  display: flex;
+  justify-content: center;
+}
+.benefits-items > span::after {
+  content: '+';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.38;
+  text-align: center;
+  color: var(--accent-color);
+}
+.benefits-items > p {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: #303030;
+}
+.benefits-wrap {
+  padding-top: 9px;
+  padding-right: 70px;
+}
+/* .benefits-items > sup {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.38;
   text-align: center;
   color: var(--accent-color);
   display: inline-block;
-}
+} */
 .benefits-pre-title {
   color: var(--primary-header-color);
   margin-bottom: var(--main-margin);
@@ -449,13 +510,31 @@ button {
   color: var(--primary-header-color);
   margin-bottom: 44px;
 }
+/* contact -wrap */
+.contact-wrap {
+  background-color: #191c26;
+}
+.contact-wrap > .container {
+  display: flex;
+  background-image: /*linear-gradient(left, #191c26, #191c26),*/ url(../images/contact-bg.png);
+  background-repeat: no-repeat;
+  background-size: calc(50% - 15px);
+  background-position: center right;
+}
 /* index-section: form */
+.form {
+  width: calc(50% + 15px);
+  padding-top: 130px;
+}
 .form-title {
   color: var(--primary-header-color);
 }
 /* index-section: contacts */
 .contacts {
-  background-color: var(--primary-header-color);
+  width: calc(50% - 15px);
+  padding-top: 130px;
+  padding-bottom: 120px;
+  padding-left: 100px;
 }
 .contacts-title {
   color: var(--second-header-color);
