@@ -22,7 +22,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
+
     <title>BarberShop</title>
   </head>
   <body>
@@ -40,6 +41,55 @@
         <div class="header-cont">
           <a href="tel:+380441111111" class="header-tel link">+38 044 111 11 11</a>
           <button type="button" class="header-btn btn" data-modal-open>Online-Booking</button>
+        </div>
+        <button type="button" class="menu-open">M</button>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="container">
+          <div class="menu-content">
+            <div>
+              <button type="button" class="menu-close">C</button>
+              <nav class="mobile-nav">
+                <ul class="mob-navigation-list list">
+                  <li class="mob-navigation-list__item">
+                    <a href="" class="mob-navigation-link link current">About</a>
+                  </li>
+                  <li class="mob-navigation-list__item">
+                    <a href="" class="mob-navigation-link link">Services and prices</a>
+                  </li>
+                  <li class="mob-navigation-list__item">
+                    <a href="" class="mob-navigation-link link">Barbers</a>
+                  </li>
+                  <li class="mob-navigation-list__item">
+                    <a href="" class="mob-navigation-link link">Contacts</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div>
+              <div class="mob-cont">
+                <a href="tel:+380441111111" class="mob-cont-tel link">+38 044 111 11 11</a>
+                <button type="button" class="header-btn btn" data-modal-open>Online-Booking</button>
+              </div>
+
+              <div class="mob-soc">
+                <ul class="mob-soc-list list">
+                  <li>
+                    <a href="" class="mob-soc-links link" rel="noopener noreferrer nofollow"
+                      >Instagram</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="mob-soc-links link" rel="noopener noreferrer nofollow"
+                      >YouTube</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -68,7 +118,7 @@
         </div>
       </section>
       <!--About-->
-      <section class="about">
+      <!-- <section class="about">
         <div class="container">
           <ul class="list-about list">
             <li class="about-items link"><img src="./images/img-1.jpg" alt="" /></li>
@@ -89,9 +139,9 @@
             <button type="button" class="about-btn btn">online-booking</button>
           </div>
         </div>
-      </section>
+      </section> -->
       <!--Service and pricing-->
-      <section class="prices">
+      <!-- <section class="prices">
         <div class="container">
           <p class="prices-pre-title pre-title">Spend your time with the best masters</p>
           <h2 class="prices-title title">Services and prices</h2>
@@ -135,9 +185,9 @@
           </div>
           <button type="button" class="prices-btn btn">ONLINE BOOKING</button>
         </div>
-      </section>
+      </section> -->
       <!--Why with us-->
-      <section class="benefits">
+      <!-- <section class="benefits">
         <div class="container">
           <div class="benefits-list-wrap">
             <ul class="benefits-list list">
@@ -168,7 +218,7 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section class="barbers">
         <div class="container">
@@ -299,7 +349,41 @@
           <h2 class="vissually-hidden title">Gallery</h2>
           <ul class="gallery-list list">
             <li class="gallery-item">
-              <img src="./images/Rectangle-25.jpg" alt="" width="270" height="360" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/Rectangle-25-desktop.jpg    1x,
+                    ./images/Rectangle-25-desktop-x2.jpg 2x
+                  "
+                  media="(min-width:1200px"
+                />
+                <source
+                  srcset="
+                    ./images/Rectangle-25-tablet.jpg    1x,
+                    ./images/Rectangle-25-tablet-x2.jpg 2x
+                  "
+                  media="(min-width:768px"
+                />
+                />
+                <source
+                  srcset="
+                    ./images/Rectangle-25-mobile.jpg    1x,
+                    ./images/Rectangle-25-mobile-x2.jpg 2x
+                  "
+                  media="(min-width:480px"
+                />
+                />
+                <img
+                  srcset="
+                    ./images/Rectangle-25-desktop.jpg    1x,
+                    ./images/Rectangle-25-desktop-x2.jpg 2x
+                  "
+                  src="./images/Rectangle-25-desktop.jpg"
+                  alt="gallery image"
+                  width="270"
+                  height="360"
+                />
+              </picture>
             </li>
             <li class="gallery-item">
               <img src="./images/Rectangle-26.jpg" alt="" width="270" height="360" />
@@ -313,7 +397,7 @@
           </ul>
         </div>
       </section>
-      <div class="contact-wrap">
+      <!-- <div class="contact-wrap">
         <div class="container">
           <section class="form">
             <h2 class="form-title title">Online-booking</h2>
@@ -367,9 +451,9 @@
             <p class="contacts-text">Every day from 9:00 to 22:00</p>
           </section>
         </div>
-      </div>
+      </div> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <p class="footer-copy">&copy; Coppyright 2020</p>
         <ul class="footer-list list">
@@ -381,8 +465,8 @@
           </li>
         </ul>
       </div>
-    </footer>
-    <div class="backdrop is-hidden" data-modal>
+    </footer> -->
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg width="20" height="20" class="barbers-soc-icons">
@@ -462,11 +546,12 @@
           <button type="submit">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
